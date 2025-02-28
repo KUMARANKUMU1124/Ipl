@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Auction - Random Player Picker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="auction-container">
+        <h1>🏏 IPL Auction - Random Player Picker 🎤</h1>
+        <div class="player-input">
+            <textarea id="playerInput" placeholder="Enter player names separated by commas..."></textarea>
+            <button class="start-btn" onclick="startAuction()">Start Auction</button>
+        </div>
+        <div id="auctionArea" class="auction-hidden">
+            <div class="auction-card">
+                <img id="playerImage" src="images/default.jpg" alt="Player Image">
+                <h2 id="selectedPlayer">Click 'Next' to pick a player</h2>
+            </div>
+            <button class="next-btn" onclick="pickRandomPlayer()">🎲 Next Player</button>
+            <button class="reset-btn" onclick="resetAuction()">🔄 Reset Auction</button>
+        </div>
+        <audio id="auctionSound" src="sounds/auction.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
